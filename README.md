@@ -7,7 +7,7 @@ dockerized [google-drive-ocamlfuse](https://github.com/astrada/google-drive-ocam
 * Run the container with:
 
 ```
-docker run -v $(pwd):/mnt/gdrive -p 5901:5901 bxggs/google-drive-ocamlfuse
+docker run -d --rm -v $(pwd):/mnt/gdrive -p 5901:5901 bxggs/google-drive-ocamlfuse
 ```
 
 * Access the container through VNC (password is **vncpassword**)
